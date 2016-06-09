@@ -11,7 +11,7 @@ class GameSpider(BaseSpider):
     restricted_pages_host = "127.0.0.1:1080"
     chesskid_host = "www.chesskid.com"
     url_template = "https://%s/home/game_archive.html?member=Pawel&show=live&page=last"
-    start_urls = [url_template % (chesskid_host, ), url_template % (restricted_pages_host, )]
+    start_urls = [url_template % (chesskid_host, )]
 
     def is_online(self, response):
         return "chesskid" in response.url
