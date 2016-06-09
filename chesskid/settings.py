@@ -15,4 +15,5 @@ USER_AGENT = '%s/%s' % (BOT_NAME, BOT_VERSION)
 
 ITEM_PIPELINES = [
     'chesskid.pipelines.DuplicatesPipeline'
+    # 'chesskid.pipelines.CsvExportPipeline'
 ]
