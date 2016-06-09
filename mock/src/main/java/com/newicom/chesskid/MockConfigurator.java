@@ -73,11 +73,7 @@ public class MockConfigurator {
     }
 
     private static Body readFile(String fileName) throws IOException {
-        try {
-            InputStream stream = MockConfigurator.class.getClassLoader().getResourceAsStream(fileName);
-            return new StringBody(IOUtils.toString(stream));
-        } catch (Exception ex) {
-            return readFile("last.html");
-        }
+        InputStream stream = MockConfigurator.class.getClassLoader().getResourceAsStream(fileName);
+        return new StringBody(IOUtils.toString(stream));
     }
 }
