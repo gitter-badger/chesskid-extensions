@@ -1,0 +1,15 @@
+target
+tmp
+.history
+.idea
+*.iml
+*.pyc
+/out
+.idea_modules
+.classpath
+/.project
+/RUNNING_PID
+/.settings
+/snapshots
+games.csv
+*.html
